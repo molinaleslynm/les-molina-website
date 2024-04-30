@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+
+    <header>
+      <h1>My Gallery</h1>
+    </header>
+    
+        
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="images/null.jpg" alt="Image 1" onclick="toggleModal('images/null.jpg', 'FEBRUARY 2 2023')">
+        <div class="caption">FEBRUARY 2 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/lun.jpg" alt="Image 2" onclick="toggleModal('images/lun.jpg', 'FEBUARY 2 2023')">
+        <div class="caption">FEBUARY 2 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/xu.jpg" alt="Image 1" onclick="toggleModal('images/xu.jpg', 'JULY 7 2023')">
+        <div class="caption">JULY 7 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/hid.jpg" alt="Image 1" onclick="toggleModal('images/hid.jpg', 'JULY 6 2023')">
+        <div class="caption">JULY 6 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Z.jpg" alt="Image 1" onclick="toggleModal('images/Z.jpg', 'JULY 6 2023')">
+        <div class="caption">JULY 6 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/GO.jpg" alt="Image 1" onclick="toggleModal('images/GO.jpg', 'SEPTEMBER 26 2023')">
+        <div class="caption">SEPTEMBER 26 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/HI.jpg" alt="Image 1" onclick="toggleModal('images/HI.jpg', 'JUNE 10 2023')">
+        <div class="caption">JUNE 10 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/SUN.jpg" alt="Image 1" onclick="toggleModal('images/SUN.jpg', 'JULY 13 2023')">
+        <div class="caption">JULY 13 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/RM.jpg" alt="Image 1" onclick="toggleModal('images/RM.jpg', 'NOVEMBER 11 2023')">
+        <div class="caption">NOVEMBER 11 2023</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/GRP.jpeg" alt="Image 1" onclick="toggleModal('images/GRP.jpeg', 'OCTOBER 14 2022')">
+        <div class="caption">OCTOBER 14 2022</div>
+      </div>
+      </div>
+      <!-- Add more gallery items for other images -->
+    
+      <!-- Repeat similar structure for additional images -->
+    
+    </section>
+    <!-- ... (your existing code) -->
+    
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption" class="caption"></div>
+    </div>
+    
+    <script>
+      function toggleModal(imageSrc, caption) {
+        const modal = document.getElementById('myModal');
+        const modalImage = document.getElementById('modalImage');
+        const captionElement = document.getElementById('caption');
+    
+        if (modal.style.display === 'flex') {
+          modal.style.display = 'none';
+        } else {
+          modal.style.display = 'flex';
+          modalImage.src = imageSrc;
+          captionElement.innerHTML = caption;
+        }
+      }
+    
+      function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+      }
+    </script>
+    
+    </body>
+    
+</html>

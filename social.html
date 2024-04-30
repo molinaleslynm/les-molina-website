@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Accounts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5a5f64;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon img {
+            width: 70%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .facebook {
+            background-color: #3b5998;
+        }
+
+        .twitter {
+            background-color: #1da1f2;
+        }
+
+        .instagram {
+            background-color: #c13584;
+        }
+        .tiktok {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/" target="_blank" class="social-icon tiktok"><img src="images/tiktok.png" alt="tiktok"></a>
+    </div>
+</body>
+</html>
